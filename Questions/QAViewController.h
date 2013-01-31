@@ -10,4 +10,12 @@
 
 @interface QAViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+
+@property (strong, nonatomic) NSArray* questions;
+@property (strong, nonatomic) NSArray* answers;
+
+- (IBAction)nextButtonPressed:(id)sender;
+
 @end
